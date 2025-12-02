@@ -1,4 +1,4 @@
-<h1 align="center">KRIS-Bench: Benchmarking Next-Level Intelligent Image Editing Models</h1>
+<h1 align="center">RULER-Bench: Probing Rule-based Reasoning Abilities of Next-level Video Generation Models for Vision Foundation Intelligence</h1>
 
 <p align="center">
   <a href="https://arxiv.org/abs/250xxxx"><img src="https://img.shields.io/badge/Paper-arXiv%3A250xxxx-b31b1b?logo=arxiv&logoColor=red"></a>
