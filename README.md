@@ -34,7 +34,7 @@ We propose **RULER-Bench**, a comprehensive benchmark designed to evaluate the *
 ---
 ## 📊Evaluation Result
 
-| Rule Categories | Metric | Veo 3.1 | Veo 2 | Sora 2 | PixelVerse-V5 | Wan 2.5 | Seedance1.0-pro | HunyuanVideo | CogVideoX1.5 5B | Wan 2.2 A14B | Wan 2.1 14B |
+| Rule Categories | Metric | Veo3.1 | Veo2 | Sora2 | PixelVerse-V5 | Wan2.5 | Seedance1.0-pro | HunyuanVideo | CogVideoX1.5 5B | Wan2.2 A14B | Wan2.1 14B |
 | :-------------: | :----: | :-----: | :---: | :----: | :-----------: | :-----: | :-------------: | :----------: | :----------: | :--------: | :--------: |
 |  Science Rule   |   IF   |  65.05  | 42.17 | 66.00  |     57.13     |  57.38  |      58.86      |    24.92     |    27.97     |   37.15    |   35.80    |
 |                 |   VC   |  83.18  | 73.3  | 88.01  |     80.76     |  80.48  |      80.99      |    48.46     |    48.84     |   68.52    |   65.74    |
