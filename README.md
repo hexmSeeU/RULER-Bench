@@ -8,7 +8,7 @@
 
 ## 📢 News
 
-- **[2025-12-05]** We have released the **Paper**, **Project Page**, and **Dataset** !
+- **[2025-12-03]** We have released the **Paper**, **Project Page**, and **Dataset** !
 
 ---
 
