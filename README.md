@@ -27,7 +27,7 @@
 We propose **RULER-Bench**, a comprehensive benchmark designed to evaluate the **rule-based reasoning abilities** of video generation models. Grounded in three fundamental domains, we formulate rule-based reasoning ability into six categories: <i>Science</i>, <i>Vision</i>, <i>Hypothesis Game</i>, <i>Semantics</i>, and <i>Humanity</i>. These categories are further subdivided into 40 tasks. Based on the task paradigm, we curate 622 high quality instances. Using these samples, we evaluate 10 video models based on the corresponding checklist across four evaluation metrics: <i>Rule Coherence</i>, <i>Visual Consistency</i>, <i>Instruction Following</i>, and <i>Visual Fidelity</i>. Each checklist question is scored by GPT-o3 with discrete labels. To validate the reliability of using GPT-os as an evaluator, we conduct a human alignment study, in which GPT-o3 achieves 85% agreement with human judgments. Extensive experiments show that the state-of-the-art model achieves only 48.87% on the rule coherence metric, highlighting significant room for improvement in the reasoning capability of next-level video models.
 
 <p align="center">
-  <img src="assets/teaser.png" alt="KRIS-Bench Overview" width="100%">
+  <img src="assets/teaser.png" alt="RULER-Bench Overview" width="100%">
 </p>
 
 
