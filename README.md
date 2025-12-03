@@ -1,7 +1,7 @@
 <h1 align="center">RULER-Bench: Probing Rule-based Reasoning Abilities of Next-level Video Generation Models for Vision Foundation Intelligence</h1>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/250xxxx"><img src="https://img.shields.io/badge/Paper-arXiv%3A250xxxx-b31b1b?logo=arxiv&logoColor=red"></a>
+  <a href="https://arxiv.org/abs/2512.02622"><img src="https://img.shields.io/badge/Paper-arXiv%3A2512.02622-b31b1b?logo=arxiv&logoColor=red"></a>
   <a href="https://hexmseeu.github.io/RULER-Bench-proj/"><img src="https://img.shields.io/badge/%F0%9F%8C%90%20Project%20Page-Website-8A2BE2"></a>
   <a href="https://huggingface.co/datasets/hexmSeeU/RULER-Bench"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue"></a>
 
@@ -82,7 +82,7 @@ If you find RULER-Bench helpful, please cite:
 @article{he2025ruler,
   title={RULER-Bench: Probing Rule-based Reasoning Abilities of Next-level Video Generation Models for Vision Foundation Intelligence},
   author={He, Xuming and Fan, Zehao and Li, Hengjia and Zhuo, Fan and Xu, Hankun and Cheng, Senlin and Weng, Di and Liu, Haifeng and Ye, Can and Wu, Boxi},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  journal={arXiv preprint arXiv:2512.02622},
   year={2025}
 }
 ```
