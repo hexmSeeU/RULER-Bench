@@ -8,6 +8,7 @@
 
 ## 📢 News
 
+- **[2025-12-19]** We have released the **Evaluation Code** !
 - **[2025-12-03]** We have released the **Paper**, **Project Page**, and **Dataset** !
 
 ---
@@ -16,7 +17,7 @@
 
 - [x] Release paper
 - [x] Release dataset 
-- [ ] Release evaluation code
+- [x] Release evaluation code
 
 
 
@@ -71,6 +72,50 @@ We propose **RULER-Bench**, a comprehensive benchmark designed to evaluate the *
 |                 |   RC   |  48.87  | 25.46 | 41.23  |     41.51     |  32.17  |      34.3       |    17.99     |     17.5     |   23.58    |   22.51    |
 |                 |  Avg   |  70.24  | 52.77 | 66.76  |     65.95     |  61.15  |      62.25      |     44.3     |     41.8     |   53.24    |   49.96    |
 |    Win Rate     |        |  0.397  | 0.186 | 0.340  |     0.300     |  0.257  |      0.267      |    0.151     |    0.151     |   0.193    |   0.162    |
+
+---
+
+## 🚀 Usage
+
+First, download the benchmark and place them in `./RULER-Bench` directory. You can fetch the full dataset from <a href="https://huggingface.co/datasets/hexmSeeU/RULER-Bench">RULER-Bench</a>.
+
+Second, evaluate your model using the RULER-Bench. The inference results should be organized in the following directory structure:
+
+```
+{model_name}/
+├── anomaly/
+│   ├── 0.mp4
+│   ├── 1.mp4
+│   ├── 2.mp4
+│   └── ...
+├── biology/
+│   ├── 0.mp4
+│   ├── 1.mp4
+│   └── ...
+└── ...
+```
+
+- `{model_name}`: Name of the evaluated video generation model (e.g., `veo3_1`).
+
+- `{task_name}`: Task names defined in RULER-Bench (e.g., `anomaly`, `biology`, `chess`).
+
+- `{index}.mp4`: Generated video corresponding to the task instance index in the benchmark.
+
+Third, evaluate the generated videos across all tasks by using the main script:
+
+```
+python eval.py --model_name your_model_name
+```
+
+To ensure that all evaluation results are correctly parsed, we highly recommen checking the output logs and re-running the script if necessary. Valid outputs will be automatically detected and reused, and do not need to be regenerated.
+
+The evaluation results will be written to the same directory structure as the inference results.
+
+Finally, run the following script to compute your model's score across four evaluation dimensions for each category.
+
+```
+python cal_acc.py --model_name your_model_name
+```
 
 ---
 
