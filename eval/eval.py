@@ -95,10 +95,8 @@ def extract_frames(video_path, fps=2, max_side=512):
             break
 
         if frame_idx % frame_interval == 0:
-            # === 👇 关键：按比例缩放帧  ===
             frame = resize_keep_ratio(frame, max_side=max_side)
 
-            # 转换为可上传格式
             frame_list.append(img_format_from_array(frame))
 
         frame_idx += 1
