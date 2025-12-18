@@ -228,7 +228,7 @@ if __name__ == "__main__":
     model_save_dir = os.path.join(SAVE_DIR, model_name)
 
 
-    # Step1: calculate score per instance and save to json file
+    # Step 1: calculate score per instance and save to json file
     cal_score_per_instance(
         model_res_dir,
         model_save_dir
@@ -240,7 +240,7 @@ if __name__ == "__main__":
     )
 
 """
-python cal_acc.py --model_name veo3_1
+python cal_acc.py --model_name your_model_name
 """
 
 
