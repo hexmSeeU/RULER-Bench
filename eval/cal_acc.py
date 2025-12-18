@@ -123,7 +123,7 @@ def report_acc(
                         category_dimension[category][dim].append(avg_scores[dim])
                         # all_scores.append(avg_scores[dim])
 
-                # 计算每个 category 的平均
+                # calculate average score per category
                 if category != "vision rule":
                     category_answers[category].append(
                         (avg_scores["Instruction Following"] +
@@ -151,7 +151,7 @@ def report_acc(
     # total average score
     total_avg = sum(all_scores) / len(all_scores) / 2.0 * 100.0
 
-    # === 各 category 平均 ===
+    # average per dimension
     cat_results = {cat: (sum(scores) / len(scores) / 2.0 * 100.0)  
                    for cat, scores in category_answers.items()}
 
@@ -202,7 +202,7 @@ def report_acc(
     avg_rule_coherence = sum(avg["Rule Coherence"]) / len(avg["Rule Coherence"])
     total_avg = (avg_insruction + avg_visual_consistency + avg_visual_fidelity + avg_rule_coherence) / 4.0
 
-    # 在末尾添加 overall 维度结果
+    # add overall result
     excel_rows.append({"Category": "Overall", "Dimension": "IF", "Score": round(avg_insruction, 2)})
     excel_rows.append({"Category": "", "Dimension": "VC", "Score": round(avg_visual_consistency, 2)})
     excel_rows.append({"Category": "", "Dimension": "VF", "Score": round(avg_visual_fidelity, 2)})
